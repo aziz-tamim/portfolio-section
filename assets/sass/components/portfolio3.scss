@@ -1,0 +1,62 @@
+///// portfolio3 start /////
+.portfolio3 {
+    padding-left: 20px;
+    &__item {
+        img {
+            width: 100%;
+        }
+        position: relative;
+        &__content {
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            opacity: 0;
+            transition: all 0.5s;
+            z-index: 99;
+            h3 {
+                margin: 0;
+                font-size: 15px;
+                font-weight: 700;
+                margin-bottom: 7px;
+            }
+            span {
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+        &:hover {
+            .portfolio3__item__content {
+                opacity: 1;
+            }
+        }
+    }
+}
+[class*="animation__"] {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #4040bdd8;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+}
+.animation__zoom-in {
+    &::before {
+        transform: scale(0.5);
+    }
+    &:hover {
+        &::before {
+            opacity: 0.9;
+            transform: scale(1);
+        }
+    }
+}
+
+///// portfolio3 ends /////
