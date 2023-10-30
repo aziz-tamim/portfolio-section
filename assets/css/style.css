@@ -103,6 +103,25 @@
       bottom: 0;
       transform: translateY(0); }
 
+.mb-30 {
+  margin-bottom: 30px; }
+
+.portfolio-single img {
+  width: 100%; }
+
+.portfolio-menu {
+  text-align: center; }
+
+.portfolio-menu button {
+  background: #000;
+  border: none;
+  color: #fff;
+  padding: 9px 25px;
+  text-transform: uppercase; }
+
+.portfolio-menu button.active {
+  background: #006eff; }
+
 .portfolio3 {
   padding-left: 20px; }
   .portfolio3__item {
@@ -147,6 +166,83 @@
 .animation__zoom-in:hover::before {
   opacity: 0.9;
   transform: scale(1); }
+
+.animation__zoom-out img {
+  transition: all 0.5s; }
+
+.animation__zoom-out::before {
+  transform: scale(0.5);
+  z-index: 2; }
+
+.animation__zoom-out:hover img {
+  transform: scale(0.5); }
+
+.animation__zoom-out:hover::before {
+  opacity: 1;
+  transform: scale(1); }
+
+.animation__zoom-image {
+  overflow: hidden; }
+  .animation__zoom-image img {
+    transition: all 0.5s; }
+  .animation__zoom-image:hover::before {
+    opacity: 1;
+    z-index: 2; }
+  .animation__zoom-image:hover img {
+    transform: scale(1.3); }
+
+.animation__zoom-gradient:hover::before {
+  opacity: 1;
+  z-index: 2; }
+
+.animation__zoom-right {
+  overflow: hidden; }
+  .animation__zoom-right::before {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    transition: 0.5s;
+    opacity: 0; }
+  .animation__zoom-right:hover:before {
+    left: 0;
+    opacity: 1;
+    right: 0; }
+
+.animation__zoom-left {
+  overflow: hidden; }
+  .animation__zoom-left::before {
+    height: 100%;
+    width: 0;
+    left: 0;
+    transition: 0.5s;
+    opacity: 0; }
+  .animation__zoom-left:hover:before {
+    width: 100%;
+    opacity: 1; }
+
+.animation__zoom-shift {
+  overflow: hidden; }
+  .animation__zoom-shift::before {
+    width: 100%;
+    height: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s; }
+  .animation__zoom-shift:hover:before {
+    opacity: 1;
+    height: 100%;
+    bottom: 0; }
+
+.animation__zoom-top {
+  overflow: hidden; }
+  .animation__zoom-top::before {
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(100%); }
+  .animation__zoom-top:hover:before {
+    opacity: 1;
+    transform: translateY(0); }
 
 * {
   margin: 0;

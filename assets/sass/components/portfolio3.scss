@@ -58,5 +58,110 @@
         }
     }
 }
-
+.animation__zoom-out {
+    img {
+        transition: all 0.5s;
+    }
+    &::before {
+        transform: scale(0.5);
+        z-index: 2;
+    }
+    &:hover {
+        img {
+            transform: scale(0.5);
+        }
+        &::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}
+.animation__zoom-image {
+    overflow: hidden;
+    img {
+        transition: all 0.5s;
+    }
+    &:hover {
+        &::before {
+            opacity: 1;
+            z-index: 2;
+        }
+        img {
+            transform: scale(1.3);
+        }
+    }
+}
+.animation__zoom-gradient {
+    &:hover {
+        &::before {
+            opacity: 1;
+            z-index: 2;
+        }
+    }
+}
+.animation__zoom-right {
+    overflow: hidden;
+    &::before {
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    &:hover {
+        &:before {
+            left: 0;
+            opacity: 1;
+            right: 0;
+        }
+    }
+}
+.animation__zoom-left {
+    overflow: hidden;
+    &::before {
+        height: 100%;
+        width: 0;
+        left: 0;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    &:hover {
+        &:before {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+}
+.animation__zoom-shift {
+    overflow: hidden;
+    &::before {
+        width: 100%;
+        height: 0;
+        top: 0;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+    &:hover {
+        &:before {
+            opacity: 1;
+            height: 100%;
+            bottom: 0;
+        }
+    }
+}
+.animation__zoom-top {
+    overflow: hidden;
+    &::before {
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    &:hover {
+        &:before {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
 ///// portfolio3 ends /////

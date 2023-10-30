@@ -65,3 +65,22 @@
         }
     }
 }
+.mb-30 {
+    margin-bottom: 30px;
+}
+.portfolio-single img  {
+    width: 100%;
+}
+.portfolio-menu {
+    text-align: center;
+}
+.portfolio-menu button {
+    background: #000;
+    border: none;
+    color: #fff;
+    padding: 9px 25px;
+    text-transform: uppercase;
+}
+.portfolio-menu button.active {
+    background: rgb(0, 110, 255);
+}
