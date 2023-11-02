@@ -3,6 +3,7 @@
     &__item {
         position: relative;
         overflow: hidden;
+        margin-bottom: 20px;
         img {
             transition: all 0.5s;
             width: 100%;
@@ -83,4 +84,21 @@
 }
 .portfolio-menu button.active {
     background: rgb(0, 110, 255);
+}
+
+@media only screen and (max-width: 1199px) {
+    .d-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 767px) {
+    // .d-flex {
+    //     grid-template-columns: 1fr 1fr;
+    // }
+}
+@media only screen and (max-width: 500px) {
+    .d-flex {
+        grid-template-columns: 1fr;
+    }
 }

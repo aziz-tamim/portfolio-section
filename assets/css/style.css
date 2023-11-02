@@ -55,7 +55,8 @@
   padding: 0 40px; }
   .portfolio2__item {
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-bottom: 20px; }
     .portfolio2__item img {
       transition: all 0.5s;
       width: 100%; }
@@ -121,6 +122,15 @@
 
 .portfolio-menu button.active {
   background: #006eff; }
+
+@media only screen and (max-width: 1199px) {
+  .d-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (max-width: 500px) {
+  .d-flex {
+    grid-template-columns: 1fr; } }
 
 .portfolio3 {
   padding-left: 20px; }
