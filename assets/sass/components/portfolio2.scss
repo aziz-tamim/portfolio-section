@@ -89,16 +89,16 @@
 @media only screen and (max-width: 1199px) {
     .d-flex {
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .d-flex {
         grid-template-columns: 1fr 1fr;
     }
-}
-@media only screen and (max-width: 767px) {
-    // .d-flex {
-    //     grid-template-columns: 1fr 1fr;
-    // }
-}
-@media only screen and (max-width: 500px) {
+  }
+  @media only screen and (max-width: 500px) {
     .d-flex {
         grid-template-columns: 1fr;
     }
-}
+  }
