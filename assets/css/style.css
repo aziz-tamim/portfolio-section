@@ -130,9 +130,9 @@
 
 @media only screen and (max-width: 767px) {
   .d-flex {
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr; } }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 556px) {
   .d-flex {
     grid-template-columns: 1fr; } }
 
